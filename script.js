@@ -31,6 +31,13 @@ function render() {
     
 }
 
+function restartGame() {
+    fields = [null, null, null, null, null, null, null, null, null]; // Directly update the global fields array
+    currentPlayer = "circle"; // Optionally reset the current player to the starting player
+    render();
+}
+
+
 function handleCellClick(index) {
     if (!fields[index]) {
         fields[index] = currentPlayer;
@@ -58,6 +65,8 @@ function gameEnd() {
         cell.onclick = null; // Remove click event listener
     });
 }
+
+
     
 
 function drawWinningLine(combination, contentDiv) {
