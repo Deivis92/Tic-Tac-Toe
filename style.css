@@ -1,11 +1,18 @@
 body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #323232;
+    color: white;
+}
+
+h1 {
+    margin-bottom: 64px;
+    font-size: 50px;
 }
 
 #content {
@@ -13,6 +20,7 @@ body {
     grid-template-columns: repeat(3, 100px);
     grid-template-rows: repeat(3, 100px);
     gap: 5px;
+    background-color: white;
 }
 
 .cell {
@@ -22,14 +30,26 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 2em;
-    background-color: #fff;
-    border: 1px solid #ccc;
+    background-color: #323232;  /* Gleiche Farbe wie der Hintergrund */
+    cursor: pointer;
 }
 
-.cell.circle {
-    color: red;
+.cell:hover {
+    background-color: rgba(83, 46, 46, 0.3);
+    cursor: pointer;
 }
+   
+h1 {
+    margin-bottom: 64px;
+    font-size: 50px;
+}
+    
+    
 
-.cell.cross {
-    color: blue;
-}
+
+
+  
+    
+
+
+
